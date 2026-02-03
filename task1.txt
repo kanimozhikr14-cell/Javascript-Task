@@ -1,0 +1,42 @@
+var is function-scoped and can be redeclared and reassigned. 
+let is block-scoped and can be reassigned but not redeclared in the same scope. const is also block-scoped but cannot be redeclared or reassigned, so it is used for fixed values.
+
+var allows redeclaration and it is function-scoped, JavaScript does not treat redeclaration as an error.
+Both var and let allow reinitialization, meaning their values can be changed after declaration.
+const does not allow redeclaration or reinitialization. Once a value is assigned to a const variable it cannot be change
+const ensures that the value remains constant throughout the program.
+Redeclaring a let variable in the same scope causes a syntax error, because JavaScript does not allow multiple declarations of let.
+Reassigning const variables causes type error because it cannot be modified.
+const is preferred because it enforces block scope and prevents unintended reassignment, making code more reliable and easier to maintain.
+No, const cannot be declared without initialization. JavaScript requires a value to be assigned at the time of declaration, otherwise it throws a SyntaxError.
+var  should be avoided because its behavior can cause unexpected bugs. Let and const provide better control and are safer alternatives.
+30
+15
+SyntaxError - let does not allow redeclaration
+Type error - const variables cannot be reassigned after initialization.
+var a = 10;
+var a = 20;
+console.log(a);
+let b = 5;
+b = 15;
+console.log(b);
+const a = 12;
+a = 24;
+	This causes TypeError because constvariable cannot be redeclared.
+
+
+
+var count = 1;
+count = 2;
+let count = 1;
+count = 2;
+Value changes here and this place is applicable.
+var a = 15;
+Const a = 15;
+var Name =”Kani”; //can be redeclared or reinitialized
+let age=”35”;  //can be reinitialised
+const gender = “Female” //can't be changed.
+
+
+
+
